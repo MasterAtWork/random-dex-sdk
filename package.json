@@ -1,5 +1,5 @@
 {
-  "name": "random-sdk",
+  "name": "random-dex-sdk",
   "license": "MIT",
   "version": "0.0.1",
   "description": "🛠 An SDK for building applications on top of Random.",
@@ -8,7 +8,7 @@
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/MasterAtWork/random-sdk.git",
+  "repository": "https://github.com/MasterAtWork/random-dex-sdk.git",
   "keywords": [
     "random",
     "ethereum"
