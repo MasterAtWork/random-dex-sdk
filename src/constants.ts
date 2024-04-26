@@ -23,18 +23,23 @@ export enum Rounding {
   ROUND_UP
 }
 
-export enum TESTNET_FACTORY_ADDRESS {
-  MAINNET = '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f',
-  ROPSTEN = '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f', // deprecated
-  RINKEBY = '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f', // deprecated
-  GÖRLI = '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f', // deprecated
-  KOVAN = '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f', // deprecated
-  SEPOLIA = '0x24E7f67b7789555EaE221317Be9BB4B6c67a0a54'
+export const TESTNET_FACTORY_ADDRESS: { [chainId in ChainId]: string } = {
+  [ChainId.MAINNET]: '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f',
+  [ChainId.ROPSTEN]: '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f', // deprecated
+  [ChainId.RINKEBY]: '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f', // deprecated
+  [ChainId.GÖRLI]: '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f', // deprecated
+  [ChainId.KOVAN]: '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f', // deprecated
+  [ChainId.SEPOLIA]: '0x24E7f67b7789555EaE221317Be9BB4B6c67a0a54'
 }
 
-export const FACTORY_ADDRESS = '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f'
-
-export const INIT_CODE_HASH = '0xec56e64c56a2b7cd64c1270eb106742061e7bb378896f225b3e95fc74120f722' // Sepolia
+export const TESTNET_INIT_CODE_HASH: { [chainId in ChainId]: string } = {
+  [ChainId.MAINNET]: '0x0',
+  [ChainId.ROPSTEN]: '0x0', // deprecated
+  [ChainId.RINKEBY]: '0x0', // deprecated
+  [ChainId.GÖRLI]: '0x0', // deprecated
+  [ChainId.KOVAN]: '0x0', // deprecated
+  [ChainId.SEPOLIA]: '0xec56e64c56a2b7cd64c1270eb106742061e7bb378896f225b3e95fc74120f722'
+}
 
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
 
