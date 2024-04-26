@@ -5,10 +5,11 @@ export type BigintIsh = JSBI | bigint | string
 
 export enum ChainId {
   MAINNET = 1,
-  ROPSTEN = 3,
-  RINKEBY = 4,
-  GÖRLI = 5,
-  KOVAN = 42
+  ROPSTEN = 3, // deprecated
+  RINKEBY = 4, // deprecated
+  GÖRLI = 5, // deprecated
+  KOVAN = 42, // deprecated
+  SEPOLIA = 11155111
 }
 
 export enum TradeType {
@@ -20,6 +21,15 @@ export enum Rounding {
   ROUND_DOWN,
   ROUND_HALF_UP,
   ROUND_UP
+}
+
+export enum TESTNET_FACTORY_ADDRESS {
+  MAINNET = '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f',
+  ROPSTEN = '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f', // deprecated
+  RINKEBY = '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f', // deprecated
+  GÖRLI = '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f', // deprecated
+  KOVAN = '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f', // deprecated
+  SEPOLIA = '0xB7f907f7A9eBC822a80BD25E224be42Ce0A698A0'
 }
 
 export const FACTORY_ADDRESS = '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f'
