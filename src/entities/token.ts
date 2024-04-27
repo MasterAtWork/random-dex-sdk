@@ -86,5 +86,12 @@ export const WETH = {
     18,
     'WETH',
     'Wrapped Ether'
+  ),
+  [ChainId.HOLESKY]: new Token(
+    ChainId.SEPOLIA,
+    '0x94373a4919B3240D86eA41593D5eBa789FEF3848',
+    18,
+    'WETH',
+    'Wrapped Ether'
   )
 }

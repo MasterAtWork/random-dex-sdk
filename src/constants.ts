@@ -9,7 +9,8 @@ export enum ChainId {
   RINKEBY = 4, // deprecated
   GÖRLI = 5, // deprecated
   KOVAN = 42, // deprecated
-  SEPOLIA = 11155111
+  SEPOLIA = 11155111,
+  HOLESKY = 17000
 }
 
 export enum TradeType {
@@ -29,7 +30,8 @@ export const TESTNET_FACTORY_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.RINKEBY]: '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f', // deprecated
   [ChainId.GÖRLI]: '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f', // deprecated
   [ChainId.KOVAN]: '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f', // deprecated
-  [ChainId.SEPOLIA]: '0x24E7f67b7789555EaE221317Be9BB4B6c67a0a54'
+  [ChainId.SEPOLIA]: '0x1cA91381B6A6FFA0436bE1C829BfAa25F7D3191c',
+  [ChainId.HOLESKY]: '0x15165a529F1310F1a361cbDbcf1f4b222212bd88'
 }
 
 export const TESTNET_INIT_CODE_HASH: { [chainId in ChainId]: string } = {
@@ -38,7 +40,8 @@ export const TESTNET_INIT_CODE_HASH: { [chainId in ChainId]: string } = {
   [ChainId.RINKEBY]: '0x0', // deprecated
   [ChainId.GÖRLI]: '0x0', // deprecated
   [ChainId.KOVAN]: '0x0', // deprecated
-  [ChainId.SEPOLIA]: '0xec56e64c56a2b7cd64c1270eb106742061e7bb378896f225b3e95fc74120f722'
+  [ChainId.SEPOLIA]: '0x1a6f9e6e30154255053fb2530e9fbc2b70121513dcd40fdbef417181aae8ea4e',
+  [ChainId.HOLESKY]: '0x1a6f9e6e30154255053fb2530e9fbc2b70121513dcd40fdbef417181aae8ea4e'
 }
 
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
