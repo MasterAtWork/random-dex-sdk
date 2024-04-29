@@ -35,7 +35,7 @@ export const TESTNET_FACTORY_ADDRESS: { [chainId in ChainId]: string } = {
 }
 
 export const TESTNET_INIT_CODE_HASH: { [chainId in ChainId]: string } = {
-  [ChainId.MAINNET]: '0x0',
+  [ChainId.MAINNET]: '0x096e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f',
   [ChainId.ROPSTEN]: '0x0', // deprecated
   [ChainId.RINKEBY]: '0x0', // deprecated
   [ChainId.GÖRLI]: '0x0', // deprecated
