@@ -4,11 +4,6 @@ import JSBI from 'jsbi'
 export type BigintIsh = JSBI | bigint | string
 
 export enum ChainId {
-  MAINNET = 1,
-  ROPSTEN = 3, // deprecated
-  RINKEBY = 4, // deprecated
-  GÖRLI = 5, // deprecated
-  KOVAN = 42, // deprecated
   SEPOLIA = 11155111,
   HOLESKY = 17000
 }
@@ -25,21 +20,11 @@ export enum Rounding {
 }
 
 export const TESTNET_FACTORY_ADDRESS: { [chainId in ChainId]: string } = {
-  [ChainId.MAINNET]: '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f',
-  [ChainId.ROPSTEN]: '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f', // deprecated
-  [ChainId.RINKEBY]: '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f', // deprecated
-  [ChainId.GÖRLI]: '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f', // deprecated
-  [ChainId.KOVAN]: '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f', // deprecated
   [ChainId.SEPOLIA]: '0x1cA91381B6A6FFA0436bE1C829BfAa25F7D3191c',
   [ChainId.HOLESKY]: '0x15165a529F1310F1a361cbDbcf1f4b222212bd88'
 }
 
 export const TESTNET_INIT_CODE_HASH: { [chainId in ChainId]: string } = {
-  [ChainId.MAINNET]: '0x096e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f',
-  [ChainId.ROPSTEN]: '0x0', // deprecated
-  [ChainId.RINKEBY]: '0x0', // deprecated
-  [ChainId.GÖRLI]: '0x0', // deprecated
-  [ChainId.KOVAN]: '0x0', // deprecated
   [ChainId.SEPOLIA]: '0x1a6f9e6e30154255053fb2530e9fbc2b70121513dcd40fdbef417181aae8ea4e',
   [ChainId.HOLESKY]: '0x1a6f9e6e30154255053fb2530e9fbc2b70121513dcd40fdbef417181aae8ea4e'
 }
