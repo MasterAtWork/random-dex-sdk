@@ -6,7 +6,6 @@ export type BigintIsh = JSBI | bigint | string
 export enum ChainId {
   SEPOLIA = 11155111, // Eth Sepolia
   HOLESKY = 17000, // Eth Holesky
-  ARTIAO = 80085, // Bearchain
   BNB = 97 // Binance Smart Chain
 }
 
@@ -24,28 +23,24 @@ export enum Rounding {
 export const TESTNET_FACTORY_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.SEPOLIA]: '0x1cA91381B6A6FFA0436bE1C829BfAa25F7D3191c',
   [ChainId.HOLESKY]: '0x15165a529F1310F1a361cbDbcf1f4b222212bd88',
-  [ChainId.ARTIAO]: '0x15165a529F1310F1a361cbDbcf1f4b222212bd88', // need to update
   [ChainId.BNB]: '0x15165a529F1310F1a361cbDbcf1f4b222212bd88'
 }
 
 export const TESTNET_INIT_CODE_HASH: { [chainId in ChainId]: string } = {
   [ChainId.SEPOLIA]: '0x1a6f9e6e30154255053fb2530e9fbc2b70121513dcd40fdbef417181aae8ea4e',
   [ChainId.HOLESKY]: '0x1a6f9e6e30154255053fb2530e9fbc2b70121513dcd40fdbef417181aae8ea4e',
-  [ChainId.ARTIAO]: '0x1a6f9e6e30154255053fb2530e9fbc2b70121513dcd40fdbef417181aae8ea4e', // need to update
   [ChainId.BNB]: '0x4dc90378a435b2d29be9cf9cc915f9d7c193234f478d6845a429befe95cbaf2d'
 }
 
 export const NATIVE_CURRENCY_SYMBOL: { [chainId in ChainId]: string } = {
   [ChainId.SEPOLIA]: 'ETH',
   [ChainId.HOLESKY]: 'ETH',
-  [ChainId.ARTIAO]: 'BERA',
   [ChainId.BNB]: 'BNB'
 }
 
 export const WRAPPED_CURRENCY_SYMBOL: { [chainId in ChainId]: string } = {
   [ChainId.SEPOLIA]: 'WETH',
   [ChainId.HOLESKY]: 'WETH',
-  [ChainId.ARTIAO]: 'WBERA',
   [ChainId.BNB]: 'WBNB'
 }
 
