@@ -8,7 +8,9 @@ export {
   Rounding,
   TESTNET_FACTORY_ADDRESS,
   TESTNET_INIT_CODE_HASH,
-  MINIMUM_LIQUIDITY
+  MINIMUM_LIQUIDITY,
+  NATIVE_CURRENCY_SYMBOL,
+  WRAPPED_CURRENCY_SYMBOL
 } from './constants'
 
 export * from './errors'
