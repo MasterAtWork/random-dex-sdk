@@ -70,5 +70,13 @@ export const WETH = {
     18,
     'WETH',
     'Wrapped Ether'
-  )
+  ),
+  [ChainId.ARTIAO]: new Token(
+    ChainId.ARTIAO,
+    '0x5806E416dA447b267cEA759358cF22Cc41FAE80F',
+    18,
+    'WBERA',
+    'Wrapped Bera'
+  ),
+  [ChainId.BNB]: new Token(ChainId.BNB, '0x094616F0BdFB0b526bD735Bf66Eca0Ad254ca81F', 18, 'WBNB', 'Wrapped BNB')
 }
