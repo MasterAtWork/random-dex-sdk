@@ -44,6 +44,12 @@ export const WRAPPED_CURRENCY_SYMBOL: { [chainId in ChainId]: string } = {
   [ChainId.BNB]: 'WBNB'
 }
 
+export const NATIVE_CURRENCY_LOGO_URL: { [chainId in ChainId]: string } = {
+  [ChainId.SEPOLIA]: 'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/info/logo.png',
+  [ChainId.HOLESKY]: 'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/info/logo.png',
+  [ChainId.BNB]: 'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/info/logo.png'
+}
+
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
 
 // exports for internal consumption
