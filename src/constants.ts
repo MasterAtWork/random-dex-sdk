@@ -7,7 +7,10 @@ export enum ChainId {
   SEPOLIA = 11155111, // Eth Sepolia
   HOLESKY = 17000, // Eth Holesky
   BNB = 97, // Binance Smart Chain
-  AVAX = 43113 // Avalanche
+  AVAX = 43113, // Avalanche
+  BASE = 84532, // Base Sepolia Chain
+  OPTIMISM = 11155420, // Op Sepolia Chain
+  BLAST = 168587773 // Blast Sepolia Chain
 }
 
 export enum TradeType {
@@ -25,35 +28,50 @@ export const TESTNET_FACTORY_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.SEPOLIA]: '0x1cA91381B6A6FFA0436bE1C829BfAa25F7D3191c',
   [ChainId.HOLESKY]: '0x15165a529F1310F1a361cbDbcf1f4b222212bd88',
   [ChainId.BNB]: '0x15165a529F1310F1a361cbDbcf1f4b222212bd88',
-  [ChainId.AVAX]: '0x15165a529F1310F1a361cbDbcf1f4b222212bd88'
+  [ChainId.AVAX]: '0x15165a529F1310F1a361cbDbcf1f4b222212bd88',
+  [ChainId.BASE]: '0x15165a529F1310F1a361cbDbcf1f4b222212bd88',
+  [ChainId.OPTIMISM]: '0x15165a529F1310F1a361cbDbcf1f4b222212bd88',
+  [ChainId.BLAST]: '0x15165a529F1310F1a361cbDbcf1f4b222212bd88'
 }
 
 export const TESTNET_INIT_CODE_HASH: { [chainId in ChainId]: string } = {
   [ChainId.SEPOLIA]: '0x1a6f9e6e30154255053fb2530e9fbc2b70121513dcd40fdbef417181aae8ea4e',
   [ChainId.HOLESKY]: '0x1a6f9e6e30154255053fb2530e9fbc2b70121513dcd40fdbef417181aae8ea4e',
   [ChainId.BNB]: '0x4dc90378a435b2d29be9cf9cc915f9d7c193234f478d6845a429befe95cbaf2d',
-  [ChainId.AVAX]: '0x4dc90378a435b2d29be9cf9cc915f9d7c193234f478d6845a429befe95cbaf2d'
+  [ChainId.AVAX]: '0x4dc90378a435b2d29be9cf9cc915f9d7c193234f478d6845a429befe95cbaf2d',
+  [ChainId.BASE]: '0x4dc90378a435b2d29be9cf9cc915f9d7c193234f478d6845a429befe95cbaf2d',
+  [ChainId.OPTIMISM]: '0xe635782caf8b443275c6be440769e3f060625a0605531680ed730e58f43739a5',
+  [ChainId.BLAST]: '0xe635782caf8b443275c6be440769e3f060625a0605531680ed730e58f43739a5'
 }
 
 export const NATIVE_CURRENCY_SYMBOL: { [chainId in ChainId]: string } = {
   [ChainId.SEPOLIA]: 'ETH',
   [ChainId.HOLESKY]: 'ETH',
   [ChainId.BNB]: 'BNB',
-  [ChainId.AVAX]: 'AVAX'
+  [ChainId.AVAX]: 'AVAX',
+  [ChainId.BASE]: 'ETH',
+  [ChainId.OPTIMISM]: 'ETH',
+  [ChainId.BLAST]: 'ETH'
 }
 
 export const WRAPPED_CURRENCY_SYMBOL: { [chainId in ChainId]: string } = {
   [ChainId.SEPOLIA]: 'WETH',
   [ChainId.HOLESKY]: 'WETH',
   [ChainId.BNB]: 'WBNB',
-  [ChainId.AVAX]: 'WAVAX'
+  [ChainId.AVAX]: 'WAVAX',
+  [ChainId.BASE]: 'WETH',
+  [ChainId.OPTIMISM]: 'WETH',
+  [ChainId.BLAST]: 'WETH'
 }
 
 export const NATIVE_CURRENCY_LOGO_URL: { [chainId in ChainId]: string } = {
   [ChainId.SEPOLIA]: 'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/info/logo.png',
   [ChainId.HOLESKY]: 'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/info/logo.png',
   [ChainId.BNB]: 'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/info/logo.png',
-  [ChainId.AVAX]: 'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/avalanchec/info/logo.png'
+  [ChainId.AVAX]: 'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/avalanchec/info/logo.png',
+  [ChainId.BASE]: 'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/base/info/logo.png',
+  [ChainId.OPTIMISM]: 'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/optimism/info/logo.png',
+  [ChainId.BLAST]: 'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/blast/info/logo.png'
 }
 
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
