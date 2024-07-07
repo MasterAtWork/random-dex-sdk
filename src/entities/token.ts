@@ -81,5 +81,14 @@ export const WETH = {
     'WETH',
     'Wrapped Ether'
   ),
-  [ChainId.BLAST]: new Token(ChainId.BLAST, '0x4200000000000000000000000000000000000023', 18, 'WETH', 'Wrapped Ether')
+  [ChainId.BLAST]: new Token(ChainId.BLAST, '0x4200000000000000000000000000000000000023', 18, 'WETH', 'Wrapped Ether'),
+  [ChainId.AMOY]: new Token(ChainId.AMOY, '0x360ad4f9a9A8EFe9A8DCB5f461c4Cc1047E1Dcf9', 18, 'WMATIC', 'Wrapped Matic'),
+  [ChainId.ARBITRUM]: new Token(
+    ChainId.ARBITRUM,
+    '0x980B62Da83eFf3D4576C647993b0c1D7faf17c73',
+    18,
+    'WETH',
+    'Wrapped Ether'
+  ),
+  [ChainId.LINEA]: new Token(ChainId.LINEA, '0x10253594A832f967994b44f33411940533302ACb', 18, 'WETH', 'Wrapped Ether')
 }

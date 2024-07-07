@@ -10,7 +10,10 @@ export enum ChainId {
   AVAX = 43113, // Avalanche
   BASE = 84532, // Base Sepolia Chain
   OPTIMISM = 11155420, // Op Sepolia Chain
-  BLAST = 168587773 // Blast Sepolia Chain
+  BLAST = 168587773, // Blast Sepolia Chain
+  AMOY = 80002, // Polygon Amoy Chain
+  ARBITRUM = 421614, // Arbitrum
+  LINEA = 59141 // Linea Sepolia
 }
 
 export enum TradeType {
@@ -31,7 +34,10 @@ export const TESTNET_FACTORY_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.AVAX]: '0x15165a529F1310F1a361cbDbcf1f4b222212bd88',
   [ChainId.BASE]: '0x15165a529F1310F1a361cbDbcf1f4b222212bd88',
   [ChainId.OPTIMISM]: '0x15165a529F1310F1a361cbDbcf1f4b222212bd88',
-  [ChainId.BLAST]: '0x15165a529F1310F1a361cbDbcf1f4b222212bd88'
+  [ChainId.BLAST]: '0x15165a529F1310F1a361cbDbcf1f4b222212bd88',
+  [ChainId.AMOY]: '0x15165a529F1310F1a361cbDbcf1f4b222212bd88',
+  [ChainId.ARBITRUM]: '0x15165a529F1310F1a361cbDbcf1f4b222212bd88',
+  [ChainId.LINEA]: '0x15165a529F1310F1a361cbDbcf1f4b222212bd88'
 }
 
 export const TESTNET_INIT_CODE_HASH: { [chainId in ChainId]: string } = {
@@ -41,7 +47,10 @@ export const TESTNET_INIT_CODE_HASH: { [chainId in ChainId]: string } = {
   [ChainId.AVAX]: '0x4dc90378a435b2d29be9cf9cc915f9d7c193234f478d6845a429befe95cbaf2d',
   [ChainId.BASE]: '0x4dc90378a435b2d29be9cf9cc915f9d7c193234f478d6845a429befe95cbaf2d',
   [ChainId.OPTIMISM]: '0xe635782caf8b443275c6be440769e3f060625a0605531680ed730e58f43739a5',
-  [ChainId.BLAST]: '0xe635782caf8b443275c6be440769e3f060625a0605531680ed730e58f43739a5'
+  [ChainId.BLAST]: '0xe635782caf8b443275c6be440769e3f060625a0605531680ed730e58f43739a5',
+  [ChainId.AMOY]: '0x4dc90378a435b2d29be9cf9cc915f9d7c193234f478d6845a429befe95cbaf2d',
+  [ChainId.ARBITRUM]: '0xf26a87fb4c576443912d3fba4644785245a9f66d50baaf6982475c7348463e53',
+  [ChainId.LINEA]: '0xf26a87fb4c576443912d3fba4644785245a9f66d50baaf6982475c7348463e53'
 }
 
 export const NATIVE_CURRENCY_SYMBOL: { [chainId in ChainId]: string } = {
@@ -51,7 +60,10 @@ export const NATIVE_CURRENCY_SYMBOL: { [chainId in ChainId]: string } = {
   [ChainId.AVAX]: 'AVAX',
   [ChainId.BASE]: 'ETH',
   [ChainId.OPTIMISM]: 'ETH',
-  [ChainId.BLAST]: 'ETH'
+  [ChainId.BLAST]: 'ETH',
+  [ChainId.AMOY]: 'MATIC',
+  [ChainId.ARBITRUM]: 'ETH',
+  [ChainId.LINEA]: 'ETH'
 }
 
 export const WRAPPED_CURRENCY_SYMBOL: { [chainId in ChainId]: string } = {
@@ -61,7 +73,10 @@ export const WRAPPED_CURRENCY_SYMBOL: { [chainId in ChainId]: string } = {
   [ChainId.AVAX]: 'WAVAX',
   [ChainId.BASE]: 'WETH',
   [ChainId.OPTIMISM]: 'WETH',
-  [ChainId.BLAST]: 'WETH'
+  [ChainId.BLAST]: 'WETH',
+  [ChainId.AMOY]: 'WMATIC',
+  [ChainId.ARBITRUM]: 'WETH',
+  [ChainId.LINEA]: 'WETH'
 }
 
 export const NATIVE_CURRENCY_LOGO_URL: { [chainId in ChainId]: string } = {
@@ -71,7 +86,10 @@ export const NATIVE_CURRENCY_LOGO_URL: { [chainId in ChainId]: string } = {
   [ChainId.AVAX]: 'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/avalanchec/info/logo.png',
   [ChainId.BASE]: 'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/base/info/logo.png',
   [ChainId.OPTIMISM]: 'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/optimism/info/logo.png',
-  [ChainId.BLAST]: 'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/blast/info/logo.png'
+  [ChainId.BLAST]: 'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/blast/info/logo.png',
+  [ChainId.AMOY]: 'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/polygon/info/logo.png',
+  [ChainId.ARBITRUM]: 'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/arbitrum/info/logo.png',
+  [ChainId.LINEA]: 'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/linea/info/logo.png'
 }
 
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
